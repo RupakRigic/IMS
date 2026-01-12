@@ -13,7 +13,7 @@ function App() {
     try {
       const response = await axios.get(import.meta.env.VITE_API_URL + "/users");
       console.log(response);
-      // setUsers(response.data);
+      setUsers(response.data);
     } catch (err) {
       setError("Error fetching users");
     }
