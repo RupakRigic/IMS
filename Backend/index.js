@@ -2,7 +2,7 @@ import e from "express";
 const app = e();
 const port = 3000;
 
-app.get("/", (req, res) => {
+app.get("/api/users", (req, res) => {
 
  const users = {
     'name': 'John',
