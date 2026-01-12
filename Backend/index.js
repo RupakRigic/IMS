@@ -1,5 +1,8 @@
 import e from "express";
+import cors from "cors";
+
 const app = e();
+app.use(cors());
 const port = 3000;
 
 app.get("/api/users", (req, res) => {
